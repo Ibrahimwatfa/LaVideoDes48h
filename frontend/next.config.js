@@ -4,16 +4,30 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '1337',
-        pathname: '/uploads/**',
+        protocol: "https",
+        hostname: "**.lavideodes48h.fr",
+        pathname: "/uploads/**",
       },
       {
-        protocol: 'https',
-        hostname: 'images.pexels.com',
-      }
+        protocol: "http",
+        hostname: "localhost",
+        port: "1337",
+        pathname: "/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
     ],
+  },
+  redirects: async () => {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      },
+    ]
   },
 }
 

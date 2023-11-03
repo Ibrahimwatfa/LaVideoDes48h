@@ -8,16 +8,6 @@
   },
   "options": {},
   "attributes": {
-    "links": {
-      "type": "component",
-      "repeatable": true,
-      "component": "links.link"
-    },
-    "button": {
-      "type": "component",
-      "repeatable": false,
-      "component": "links.button-link"
-    },
     "navbarLogo": {
       "type": "component",
       "repeatable": false,

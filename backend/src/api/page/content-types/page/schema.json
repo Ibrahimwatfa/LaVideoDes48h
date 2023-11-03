@@ -29,16 +29,9 @@
       "type": "dynamiczone",
       "components": [
         "sections.hero",
-        "sections.bottom-actions",
-        "sections.feature-columns-group",
-        "sections.feature-rows-group",
-        "sections.testimonials-group",
-        "sections.large-video",
         "sections.rich-text",
-        "sections.pricing",
-        "sections.lead-form",
-        "sections.features",
-        "sections.heading"
+        "sections.heading",
+        "sections.categories-list"
       ],
       "pluginOptions": {
         "i18n": {

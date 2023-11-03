@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suggestions",
+  "info": {
+    "singularName": "suggestion",
+    "pluralName": "suggestions",
+    "displayName": "Suggestion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 50,
+      "regex": "^[a-zA-Z0-9-_' âàäèéêëîïôœùûüÿçÀÂÄÈÉÊËÎÏÔŒÙÛÜŸÇ]+$"
+    },
+    "likes": {
+      "type": "biginteger",
+      "min": "0",
+      "default": "0"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "suggestions"
+    }
+  }
+}
